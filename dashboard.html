@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyLab - Dashboard CEO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+            <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem; letter-spacing: 1px;">AGENCY OS v1.0</p>
+        </div>
+        <ul>
+            <li class="menu-title">01. Vue d'Ensemble</li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="team.html">Organigramme</a></li>
+            
+            <li class="menu-title">02. Opérations</li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="crm.html">Clients & CRM</a></li>
+            <li><a href="sop.html">SOPs</a></li>
+            <li><a href="checklists.html">Checklists</a></li>
+            
+            <li class="menu-title">03. Commercial</li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Tarifs & Calculateur</a></li>
+            <li><a href="sales.html">Sales Playbook</a></li>
+            
+            <li class="menu-title">04. Finance</li>
+            <li><a href="finance.html">Finances & Bénéfices</a></li>
+            
+            <li class="menu-title">05. Documentation</li>
+            <li><a href="docs/">Manuels</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="section-header">
+            <div class="header-tag">01.2 / Tableaux de Bord</div>
+            <h2>Dashboard CEO - Indicateurs Clés</h2>
+        </div>
+
+        <h3>Métriques Financières (Mois en cours)</h3>
+        <div class="card-grid">
+            <div class="kpi-card">
+                <div class="kpi-value">$46.2K</div>
+                <div class="kpi-label">Chiffre d'Affaires Mensuel</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value">38%</div>
+                <div class="kpi-label">Marge EBITDA Actuelle</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value">8.2 mois</div>
+                <div class="kpi-label">Runway Trésorerie</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value">12</div>
+                <div class="kpi-label">Projets Actifs</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value">4</div>
+                <div class="kpi-label">Nouveaux Leads/Mois</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-value">$2.1K</div>
+                <div class="kpi-label">MRR Services Récurrents</div>
+            </div>
+        </div>
+
+        <h3>Performance par Pôle</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Département</th>
+                    <th>Responsable</th>
+                    <th>KPIs</th>
+                    <th>Cible</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sales & Finance</strong></td>
+                    <td>Rodolph</td>
+                    <td>CA Mensuel, EBITDA, Runway</td>
+                    <td>EBITDA > 35%</td>
+                    <td style="color: #D4AF37;">⚠ En cours</td>
+                </tr>
+                <tr>
+                    <td><strong>Creative & Branding</strong></td>
+                    <td>Herman</td>
+                    <td>Taux d'acceptation maquettes V1, NPS Créatif</td>
+                    <td>Acceptation > 80%</td>
+                    <td style="color: #28a745;">✓ OK</td>
+                </tr>
+                <tr>
+                    <td><strong>Technology & Code</strong></td>
+                    <td>Hanss</td>
+                    <td>Uptime, Taux bugs post-prod, Couverture tests</td>
+                    <td>Uptime 99.9%, Tests > 80%</td>
+                    <td style="color: #28a745;">✓ OK</td>
+                </tr>
+                <tr>
+                    <td><strong>Growth & Prospecting</strong></td>
+                    <td>John</td>
+                    <td>SQLs générés, Taux conversion Cold Email</td>
+                    <td>> 15 SQLs qualifiés/mois</td>
+                    <td style="color: #28a745;">✓ OK</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Projets en Cours</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Projet</th>
+                    <th>Client</th>
+                    <th>Phase</th>
+                    <th>Responsable</th>
+                    <th>Deadline</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PROJ-BRAND-001</td>
+                    <td>FinTech Abidjan</td>
+                    <td>Branding (Étape 5/12)</td>
+                    <td>Herman</td>
+                    <td>15 Juil 2026</td>
+                    <td style="color: #D4AF37;">⚠ En cours</td>
+                </tr>
+                <tr>
+                    <td>PROJ-WEB-002</td>
+                    <td>E-commerce Lomé</td>
+                    <td>Développement (Étape 7/12)</td>
+                    <td>Hanss / Jacques</td>
+                    <td>28 Juil 2026</td>
+                    <td style="color: #28a745;">✓ OK</td>
+                </tr>
+                <tr>
+                    <td>PROJ-SAAS-003</td>
+                    <td>Tech Startup Accra</td>
+                    <td>Prospection (Étape 2/12)</td>
+                    <td>John</td>
+                    <td>18 Juil 2026</td>
+                    <td style="color: #D4AF37;">⚠ En cours</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Alertes Importantes</h3>
+        <div class="callout">
+            <div class="callout-title">⚠ ACTION REQUISE</div>
+            <p>- Planning réunion hebdo: Lundi 9h00 GMT (Discord Team Meeting)<br>
+            - Facturation FACT-2026-089 en retard (Client: E-commerce Lomé)<br>
+            - Réunion de debriefing post-mortem: PROJ-ARCH-042 à programmer</p>
+        </div>
+    </main>
+</body>
+</html>

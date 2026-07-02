@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyLab - Gestion des Projets</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+            <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem; letter-spacing: 1px;">AGENCY OS v1.0</p>
+        </div>
+        <ul>
+            <li class="menu-title">01. Vue d'Ensemble</li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="team.html">Organigramme</a></li>
+            
+            <li class="menu-title">02. Opérations</li>
+            <li><a href="projects.html" class="active">Projets</a></li>
+            <li><a href="crm.html">Clients & CRM</a></li>
+            <li><a href="sop.html">SOPs</a></li>
+            <li><a href="checklists.html">Checklists</a></li>
+            
+            <li class="menu-title">03. Commercial</li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Tarifs & Calculateur</a></li>
+            <li><a href="sales.html">Sales Playbook</a></li>
+            
+            <li class="menu-title">04. Finance</li>
+            <li><a href="finance.html">Finances & Bénéfices</a></li>
+            
+            <li class="menu-title">05. Documentation</li>
+            <li><a href="docs/">Manuels</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="section-header">
+            <div class="header-tag">02.1 / Pipeline Opérationnel</div>
+            <h2>Gestion des Projets (12 Étapes)</h2>
+        </div>
+
+        <pre>
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                              STRATEGYLAB WORKFLOW PIPELINE                             │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ [01. PROSPECTION] ──► [02. DÉCOUVERTE] ──► [03. DEVISAGE]   ──► [04. CONTRAT]    │
+│                                                                  │                     │
+│ [08. QUALITY QA]  ◄── [07. DEV LOGICIEL] ◄── [06. DESIGN UI/UX] ◄── [05. BRANDING]  │
+│       │                                                            │                     │
+│       ▼                                                            │                     │
+│ [09. LIVRAISON]   ──► [10. MAINTENANCE] ──► [11. FACTURATION] ──► [12. ARCHIVAGE] │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+        </pre>
+
+        <h3>Projets Actifs</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Projet</th>
+                    <th>Client</th>
+                    <th>Phase Actuelle</th>
+                    <th>Responsable</th>
+                    <th>Deadline</th>
+                    <th>Budget</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PROJ-BRAND-001</td>
+                    <td>FinTech Abidjan</td>
+                    <td>Branding (5/12)</td>
+                    <td>Herman</td>
+                    <td>15 Juil 2026</td>
+                    <td>$400</td>
+                    <td style="color: #D4AF37;">⚠ En cours</td>
+                </tr>
+                <tr>
+                    <td>PROJ-WEB-002</td>
+                    <td>E-commerce Lomé</td>
+                    <td>Développement (7/12)</td>
+                    <td>Hanss / Jacques</td>
+                    <td>28 Juil 2026</td>
+                    <td>$500</td>
+                    <td style="color: #28a745;">✓ OK</td>
+                </tr>
+                <tr>
+                    <td>PROJ-SAAS-003</td>
+                    <td>Tech Startup Accra</td>
+                    <td>Prospection (2/12)</td>
+                    <td>John</td>
+                    <td>18 Juil 2026</td>
+                    <td>$1,500</td>
+                    <td style="color: #D4AF37;">⚠ En cours</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Fiche Projet : PROJ-WEB-002</h3>
+        <div class="service-card">
+            <h4>Détails Projet</h4>
+            <p><strong>Client :</strong> E-commerce Lomé<br>
+            <strong>Type :</strong> Plateforme E-Commerce<br>
+            <strong>Budget Total :</strong> $500 USD<br>
+            <strong>Acompte :</strong> $250 (reçu)<br>
+            <strong>Reste à payer :</strong> $250<br>
+            <strong>Date Début :</strong> 15 Mai 2026<br>
+            <strong>Date Livraison :</strong> 28 Juil 2026</p>
+
+            <h4>Timeline & Jalons</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Responsable</th>
+                        <th>Date Cible</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Prospection</td><td>John</td><td>20 Juin</td><td>✓ Complété</td></tr>
+                    <tr><td>Découverte</td><td>Rodolph</td><td>22 Juin</td><td>✓ Complété</td></tr>
+                    <tr><td>Devisage</td><td>Rodolph</td><td>25 Juin</td><td>✓ Complété</td></tr>
+                    <tr><td>Contrat</td><td>Rodolph</td><td>28 Juin</td><td>✓ Complété</td></tr>
+                    <tr><td>Branding</td><td>Herman</td><td>15 Juil</td><td style="color: #28a745;">✓ En cours</td></tr>
+                    <tr><td>Design UI/UX</td><td>Herman</td><td>22 Juil</td><td>□ À venir</td></tr>
+                    <tr><td>Développement</td><td>Hanss/Jacques</td><td>29 Juil</td><td>□ À venir</td></tr>
+                    <tr><td>QA</td><td>Hanss</td><td>31 Juil</td><td>□ À venir</td></tr>
+                </tbody>
+            </table>
+
+            <h4>Répartition Bénéfices Estimée</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rôle</th>
+                        <th>Points</th>
+                        <td>$ estimé bénéfice (60%)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Rodolph (CEO)</td><td>5</td><td>$75</td></tr>
+                    <tr><td>Herman (Creative)</td><td>4</td><td>$60</td></tr>
+                    <tr><td>Hanss (Tech)</td><td>4</td><td>$60</td></tr>
+                    <tr><td>John (Growth)</td><td>4</td><td>$60</td></tr>
+                    <tr><td>Jacques (Junior)</td><td>2</td><td>$30</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

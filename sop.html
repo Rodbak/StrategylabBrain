@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyLab - SOPs Opérationnels</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+            <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem; letter-spacing: 1px;">AGENCY OS v1.0</p>
+        </div>
+        <ul>
+            <li class="menu-title">01. Vue d'Ensemble</li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="team.html">Organigramme</a></li>
+            
+            <li class="menu-title">02. Opérations</li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="crm.html">Clients & CRM</a></li>
+            <li><a href="sop.html" class="active">SOPs</a></li>
+            <li><a href="checklists.html">Checklists</a></li>
+            
+            <li class="menu-title">03. Commercial</li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Tarifs & Calculateur</a></li>
+            <li><a href="sales.html">Sales Playbook</a></li>
+            
+            <li class="menu-title">04. Finance</li>
+            <li><a href="finance.html">Finances & Bénéfices</a></li>
+            
+            <li class="menu-title">05. Documentation</li>
+            <li><a href="docs/">Manuels</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="section-header">
+            <div class="header-tag">02.3 / Procédures Standards</div>
+            <h2>Standard Operating Procedures (SOPs)</h2>
+        </div>
+
+        <h3>Les 12 Étapes du Pipeline StrategyLab</h3>
+
+        <h4>SOP-01 : Prospection Outbound</h4>
+        <p><strong>Responsable :</strong> John</p>
+        <p><strong>Procédure :</strong> Extraction hebdomadaire de 250 leads qualifiés sur LinkedIn Sales Navigator. Critères : Fondateurs startups (Seed/Series A) ou DSI/PME en Afrique de l'Ouest. Nettoyage via Dropcontact/NeverBounce (bounce &lt; 1%). Injection dans Smartlead. Séquence de 3 emails espacés de 4 jours, orientation vers Cal.com pour RDV.</p>
+
+        <h4>SOP-02 : Découverte et Qualification</h4>
+        <p><strong>Responsable :</strong> John / Rodolph</p>
+        <p><strong>Procédure :</strong> Appel découverte avec grille BANT (Budget, Authority, Need, Timeline). Si budget &lt; 3000 USD ou décision tierce, lead = "Non Qualifié".</p>
+
+        <h4>SOP-03 : Établissement du Devis</h4>
+        <p><strong>Responsable :</strong> Rodolph</p>
+        <p><strong>Procédure :</strong> Après validation technique par Hanss, rédaction proposition commerciale. Coefficient sécurité 1.3 appliqué sur estimations temps.</p>
+
+        <h4>SOP-04 : Contractualisation Juridique</h4>
+        <p><strong>Responsable :</strong> Rodolph</p>
+        <p><strong>Procédure :</strong> Génération contrat type. Envoi via Dropbox Sign. <strong>Règle d'Or :</strong> Aucun travail ne démarre avant signature et acompte 50% reçu.</p>
+
+        <h4>SOP-05 : Branding & Identité</h4>
+        <p><strong>Responsable :</strong> Herman</p>
+        <p><strong>Procédure :</strong> Envoi brief créatif automatisé. Deux moodboards/logos. Présentation 45 min. Développement Brandbook (logo, typo, layouts).</p>
+
+        <h4>SOP-06 : Design UI/UX</h4>
+        <p><strong>Responsable :</strong> Herman</p>
+        <p><strong>Procédure :</strong> Wireframes Lo-Fi → validation → Hi-Fi sur Figma. Design System interne (Auto-Layout, Tokens, Composants). Prototype cliquable.</p>
+
+        <h4>SOP-07 : Développement Logiciel</h4>
+        <p><strong>Responsable :</strong> Hanss / Jacques</p>
+        <p><strong>Procédure :</strong> Dépôt GitHub privé. GitFlow (main=prod, staging=tests, develop=intégration). Branches feature/* pour Jacques. Pull Request obligatoire validée par Hanss.</p>
+
+        <h4>SOP-08 : Assurance Qualité</h4>
+        <p><strong>Responsable :</strong> Hanss</p>
+        <p><strong>Procédure :</strong> Tests Jest/Cypress automatisés. Audit Google Lighthouse. Scores min requis : Accessibilité/SEO/Pratiques/Vitesse = 90/100.</p>
+
+        <h4>SOP-09 : Déploiement & Livraison</h4>
+        <p><strong>Responsable :</strong> Hanss</p>
+        <p><strong>Procédure :</strong> CI/CD vers Vercel/AWS/Railway. Certificats SSL. DNS redirection. Signature PV déclenchant facturation solde.</p>
+
+        <h4>SOP-10 : Support & Maintenance</h4>
+        <p><strong>Responsable :</strong> Jacques</p>
+        <p><strong>Procédure :</strong> Intégration client support Discord. Incident critique : 2h max. Requêtes mineures : 48h ouvrées.</p>
+
+        <h4>SOP-11 : Facturation & Recouvrement</h4>
+        <p><strong>Responsable :</strong> Rodolph</p>
+        <p><strong>Procédure :</strong> Facture Quickbooks à chaque jalon. Relance J+2. Appel D+7 si non-paiement. Mise en demeure J+15.</p>
+
+        <h4>SOP-12 : Archivage & Capitalisation</h4>
+        <p><strong>Responsable :</strong> Tous</p>
+        <p><strong>Procédure :</strong> Repo GitHub en Read-Only si pas de maintenance. Nettoyage Figma. Archivage Google Drive chiffré. Post-mortem interne 30 min.</p>
+    </main>
+</body>
+</html>

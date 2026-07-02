@@ -1,0 +1,66 @@
+{
+  "team": {
+    "ceo": {
+      "name": "Rodolph",
+      "role": "CEO",
+      "location": "Ghana",
+      "responsibilities": ["stratégie", "ventes", "finance", "recrutement", "vision"],
+      "equity": 45,
+      "points": 5
+    },
+    "creative_director": {
+      "name": "Herman (Walano)",
+      "role": "Creative Director",
+      "location": "Ghana",
+      "responsibilities": ["branding", "ui/ux", "identité visuelle", "design system"],
+      "equity": 15,
+      "points": 4
+    },
+    "cto": {
+      "name": "Hanss",
+      "role": "CTO",
+      "location": "Ghana",
+      "responsibilities": ["architecture", "développement", "qualité", "sécurité"],
+      "equity": 15,
+      "points": 4
+    },
+    "growth_lead": {
+      "name": "John",
+      "role": "Growth & Intl Partnerships Lead",
+      "location": "Togo",
+      "responsibilities": ["prospection", "cold email", "linkedin", "europe/canada"],
+      "equity": 15,
+      "points": 4
+    },
+    "junior_developer": {
+      "name": "Jacques",
+      "role": "Junior Software Engineer",
+      "location": "Togo",
+      "responsibilities": ["développement", "support", "maintenance"],
+      "equity": 5,
+      "points": 2
+    }
+  },
+  "finance": {
+    "monthly_costs": {
+      "salaries": 460,
+      "software": 45,
+      "marketing": 120,
+      "office": 60,
+      "legal": 35,
+      "emergency_fund": 40,
+      "total": 760
+    },
+    "revenue_distribution": {
+      "reinvestment": 0.4,
+      "reserve": 0.3,
+      "distribution": 0.3
+    }
+  },
+  "kpis": {
+    "sales_finance": { "metric": "CA Mensuel, EBITDA, Runway", "target": "EBITDA > 35%, Runway > 6 mois" },
+    "creative": { "metric": "Taux acceptation V1, NPS", "target": "Acceptation > 80%" },
+    "technology": { "metric": "Uptime, bugs, tests", "target": "Uptime 99.9%, Tests > 80%" },
+    "growth": { "metric": "SQLs, conversion email", "target": "> 15 SQLs/mois" }
+  }
+}

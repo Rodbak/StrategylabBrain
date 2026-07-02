@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyLab - CRM Clients</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+            <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem; letter-spacing: 1px;">AGENCY OS v1.0</p>
+        </div>
+        <ul>
+            <li class="menu-title">01. Vue d'Ensemble</li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="team.html">Organigramme</a></li>
+            
+            <li class="menu-title">02. Opérations</li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="crm.html" class="active">Clients & CRM</a></li>
+            <li><a href="sop.html">SOPs</a></li>
+            <li><a href="checklists.html">Checklists</a></li>
+            
+            <li class="menu-title">03. Commercial</li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Tarifs & Calculateur</a></li>
+            <li><a href="sales.html">Sales Playbook</a></li>
+            
+            <li class="menu-title">04. Finance</li>
+            <li><a href="finance.html">Finances & Bénéfices</a></li>
+            
+            <li class="menu-title">05. Documentation</li>
+            <li><a href="docs/">Manuels</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="section-header">
+            <div class="header-tag">02.2 / Gestion Clientèle</div>
+            <h2>CRM - Base de Données Clients</h2>
+        </div>
+
+        <input type="text" class="search-box" placeholder="Rechercher un client..." onkeyup="filterClients()">
+
+        <div class="filter-tags">
+            <span onclick="filterByStatus('all')">Tous</span>
+            <span onclick="filterByStatus('prospect')">Prospects</span>
+            <span onclick="filterByStatus('active')">Clients Actifs</span>
+            <span onclick="filterByStatus('completed')">Projets Terminés</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom Client</th>
+                    <th>Statut</th>
+                    <th>Projet</th>
+                    <th>Valeur</th>
+                    <th>Date Début</th>
+                    <th>Bénéfice Estimé</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>FinTech Abidjan</strong></td>
+                    <td>MVP en développement</td>
+                    <td>Branding + Web</td>
+                    <td>$1,150</td>
+                    <td>01 Juin 2026</td>
+                    <td>$345</td>
+                </tr>
+                <tr>
+                    <td><strong>E-commerce Lomé</strong></td>
+                    <td>Facturation retard</td>
+                    <td>E-com + Maintenance</td>
+                    <td>$15,000</td>
+                    <td>15 Mai 2026</td>
+                    <td>$4,500</td>
+                </tr>
+                <tr>
+                    <td><strong>Tech Startup Accra</strong></td>
+                    <td>Prospection</td>
+                    <td>SAAS Enterprise</td>
+                    <td>$3,000</td>
+                    <td>--</td>
+                    <td>$900</td>
+                </tr>
+                <tr>
+                    <td><strong>Consulting Côte d'Ivoire</strong></td>
+                    <td>Terminé</td>
+                    <td>Branding Enterprise</td>
+                    <td>$700</td>
+                    <td>01 Avr 2026</td>
+                    <td>$210</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Fiche Client : FinTech Abidjan</h3>
+        <div class="service-card">
+            <h4>Informations Générales</h4>
+            <p><strong>Contact :</strong> M. Koffi, CEO<br>
+            <strong>Email :</strong> koffi@fintech-abj.com<br>
+            <strong>Téléphone :</strong> +225 07 12 34 56 78<br>
+            <strong>Pays :</strong> Côte d'Ivoire<br>
+            <strong>Source :</strong> Lead John (Cold Email)</p>
+            
+            <h4>Projets Associés</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Projet</th>
+                        <th>Phase</th>
+                        <th>Responsable</th>
+                        <th>Commission (10%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PROJ-BRAND-001</td>
+                        <td>Presentation client (5/12)</td>
+                        <td>Herman</td>
+                        <td>$230</td>
+                    </tr>
+                    <tr>
+                        <td>PROJ-WEB-001</td>
+                        <td>À venir</td>
+                        <td>Hanss</td>
+                        <td>$180</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        function filterClients() {
+            const search = document.querySelector('.search-box').value.toLowerCase();
+            document.querySelectorAll('tbody tr').forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(search) ? '' : 'none';
+            });
+        }
+        function filterByStatus(status) {}
+    </script>
+</body>
+</html>

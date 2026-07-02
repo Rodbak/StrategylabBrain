@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrategyLab - Catalogue des Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+            <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem; letter-spacing: 1px;">AGENCY OS v1.0</p>
+        </div>
+        <ul>
+            <li class="menu-title">01. Vue d'Ensemble</li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="team.html">Organigramme</a></li>
+            
+            <li class="menu-title">02. Opérations</li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="crm.html">Clients & CRM</a></li>
+            <li><a href="sop.html">SOPs</a></li>
+            <li><a href="checklists.html">Checklists</a></li>
+            
+            <li class="menu-title">03. Commercial</li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="pricing.html">Tarifs & Calculateur</a></li>
+            <li><a href="sales.html">Sales Playbook</a></li>
+            
+            <li class="menu-title">04. Finance</li>
+            <li><a href="finance.html">Finances & Bénéfices</a></li>
+            
+            <li class="menu-title">05. Documentation</li>
+            <li><a href="docs/">Manuels</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="section-header">
+            <div class="header-tag">03.1 / Offres Premium</div>
+            <h2>Catalogue des Services StrategyLab</h2>
+        </div>
+
+        <input type="text" class="search-box" placeholder="Rechercher un service..." onkeyup="filterServices()">
+
+        <div class="filter-tags">
+            <span onclick="filterByTag('all')">Tous</span>
+            <span onclick="filterByTag('branding')">Branding</span>
+            <span onclick="filterByTag('design')">Design</span>
+            <span onclick="filterByTag('web')">Web</span>
+            <span onclick="filterByTag('mobile')">Mobile</span>
+            <span onclick="filterByTag('saas')">SaaS</span>
+            <span onclick="filterByTag('ai')">IA</span>
+        </div>
+
+        <div class="service-card" data-tags="branding">
+            <span class="badge">⚜️ Service Corporate Elite</span>
+            <h3>Branding & Identité Graphique de Prestige</h3>
+            <p><strong>Description :</strong> Création complète de plateformes de marques et d'univers visuels haut de gamme pour les entreprises en quête de leadership sectoriel.</p>
+            <p><strong>Inclus :</strong> Atelier positioning, logo principal, charte typographique, palette chromatique, Brandbook complet (40+ pages), designs papeterie, templates réseaux sociaux.</p>
+            <p><strong>Durée :</strong> 4 à 6 semaines</p>
+            <p><strong>Valeur ajoutée :</strong> Alignement perception publique avec objectifs stratégiques et levée de fonds investisseurs.</p>
+        </div>
+
+        <div class="service-card" data-tags="design">
+            <span class="badge">📐 Service Ingénierie Expérience</span>
+            <h3>Conception UI / UX Design d'Interfaces</h3>
+            <p><strong>Description :</strong> Conception de parcours utilisateurs et d'interfaces pour applications web et mobiles, centrée sur la fluidité et l'optimisation des taux de conversion.</p>
+            <p><strong>Inclus :</strong> User Research, personas, User Flows, wireframes Lo-Fi, Design System complet, prototypes animés.</p>
+            <p><strong>Durée :</strong> 3 à 5 semaines</p>
+            <p><strong>Valeur ajoutée :</strong> Réduction de 50% du coût de développement grâce à validation des interfaces.</p>
+        </div>
+
+        <div class="service-card" data-tags="web saas">
+            <span class="badge">💻 Service Core Engineering</span>
+            <h3>Développement Web & Applications SaaS</h3>
+            <p><strong>Description :</strong> Ingénierie et codage d'architectures logicielles modernes, sécurisées et évolutives.</p>
+            <p><strong>Inclus :</strong> Modélisation BDD, APIs sécurisées (Node.js/Go), interfaces (Next.js/React), paiements locaux/internationaux (Bizao, Wave, Stripe).</p>
+            <p><strong>Durée :</strong> 6 à 12 semaines</p>
+            <p><strong>Valeur ajoutée :</strong> Produit sans dette technique, SEO optimisé, sécurité niveau bancaire.</p>
+        </div>
+
+        <div class="service-card" data-tags="mobile">
+            <span class="badge">📱 Service Mobile Excellence</span>
+            <h3>Développement Applications Mobiles</h3>
+            <p><strong>Description :</strong> Applications multiplateformes natives et cross-platform avec performance optimale.</p>
+            <p><strong>Inclus :</strong> Développement Flutter, intégration APIs, tests multi-appareils, store deployment.</p>
+            <p><strong>Durée :</strong> 8 à 16 semaines</p>
+            <p><strong>Valeur ajoutée :</strong> Applications évolutives supportant gros volumes utilisateurs simultanés.</p>
+        </div>
+
+        <div class="service-card" data-tags="ai">
+            <span class="badge">🤖 Service Intelligence Artificielle</span>
+            <h3>Automatisation IA & Workflows</h3>
+            <p><strong>Description :</strong> Solutions d'automatisation par l'IA pour optimiser les processus métier clients.</p>
+            <p><strong>Inclus :</strong> Chatbots, automatisation emails, analyse données, intégration API IA (OpenAI, Claude).</p>
+            <p><strong>Durée :</strong> 4 à 8 semaines</p>
+            <p><strong>Valeur ajoutée :</strong> Réduction de 70% du temps manuel sur processus répétitifs.</p>
+        </div>
+
+        <div class="service-card" data-tags="branding web">
+            <span class="badge">🛒 Service E-Commerce</span>
+            <h3>Plateformes E-Commerce Complètes</h3>
+            <p><strong>Description :</strong> Boutiques en ligne performantes avec intégration paiement locale et internationale.</p>
+            <p><strong>Inclus :</strong> Catalogue produits, panier, paiement Wave/Bizao/Stripe, gestion stocks, analytics.</p>
+            <p><strong>Durée :</strong> 4 à 8 semaines</p>
+            <p><strong>Valeur ajoutée :</strong> Conversion optimisée, trafic élevé supporté, conformité locale.</p>
+        </div>
+    </main>
+
+    <script>
+        function filterServices() {
+            const search = document.querySelector('.search-box').value.toLowerCase();
+            document.querySelectorAll('.service-card').forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(search) ? 'block' : 'none';
+            });
+        }
+
+        function filterByTag(tag) {
+            document.querySelectorAll('.service-card').forEach(card => {
+                if (tag === 'all' || card.dataset.tags.includes(tag)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
