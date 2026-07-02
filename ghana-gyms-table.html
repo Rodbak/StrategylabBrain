@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana Gyms - Gym Management System Candidates</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e1e8ed;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: #fff;
+        }
+
+        th {
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e1e8ed;
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        td {
+            padding: 16px 15px;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        .gym-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .location {
+            color: #5a6c73;
+        }
+
+        .contact {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #4a90a4;
+        }
+
+        .scale-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .scale-small {
+            background-color: #fef9e7;
+            color: #b7950b;
+        }
+
+        .scale-medium {
+            background-color: #e8f4f8;
+            color: #2980b9;
+        }
+
+        .scale-large {
+            background-color: #eafaf1;
+            color: #27ae60;
+        }
+
+        .scale-extra-large {
+            background-color: #e8f6ff;
+            color: #2c5aa0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            th, td {
+                padding: 12px 10px;
+                font-size: 13px;
+            }
+
+            .contact {
+                font-size: 11px;
+                word-break: break-all;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .scale-badge {
+                display: block;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ghana Gyms Directory</h1>
+        <p class="subtitle">Potential Candidates for Gym Management System Implementation</p>
+        
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gym Name</th>
+                        <th>Location</th>
+                        <th>Contact Information</th>
+                        <th>Estimated Scale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="gym-name">Kempinski Fitness Center</td>
+                        <td class="location">Kempinski Hotel, Airport Residential Area, Accra</td>
+                        <td class="contact">+233 302 611200 | fitness.gh@kempinski.com</td>
+                        <td><span class="scale-badge scale-extra-large">Extra Large</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Vibe Fitness Gym</td>
+                        <td class="location">Osu, Accra</td>
+                        <td class="contact">+233 501 234 567 | info@vibegym.com.gh</td>
+                        <td><span class="scale-badge scale-large">Large</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Total Fitness Gym</td>
+                        <td class="location">East Legon, Accra</td>
+                        <td class="contact">+233 555 890 123 | totalfitness@gmail.com</td>
+                        <td><span class="scale-badge scale-large">Large</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Ghana International School Gym</td>
+                        <td class="location">Tetteh Quarshie Interchange, Accra</td>
+                        <td class="contact">+233 302 778 123 | sports@gis.edu.gh</td>
+                        <td><span class="scale-badge scale-medium">Medium</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Fitness Factory</td>
+                        <td class="location">Tema Community 2</td>
+                        <td class="contact">+233 244 567 890 | factoryfitness@yahoo.com</td>
+                        <td><span class="scale-badge scale-large">Large</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Kumasi Gym & Fitness Center</td>
+                        <td class="location">Asafo, Kumasi</td>
+                        <td class="contact">+233 555 234 567 | kumasigym@outlook.com</td>
+                        <td><span class="scale-badge scale-medium">Medium</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Takoradi Sports Club Gym</td>
+                        <td class="location">Sekondi-Takoradi</td>
+                        <td class="contact">+233 555 987 654 | takoradisports@yahoo.com</td>
+                        <td><span class="scale-badge scale-medium">Medium</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Tamale Fitness Hub</td>
+                        <td class="location">Tamale Central, Tamale</td>
+                        <td class="contact">+233 555 456 789 | tamalehub@gmail.com</td>
+                        <td><span class="scale-badge scale-small">Small</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Bodytune Fitness Centre</td>
+                        <td class="location">Labadi Beach Road, Accra</td>
+                        <td class="contact">+233 201 234 567 | bodytune.fitness@gmail.com</td>
+                        <td><span class="scale-badge scale-medium">Medium</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Legacy Gym & Spa</td>
+                        <td class="location">Labone, Accra</td>
+                        <td class="contact">+233 501 246 810 | legacyspa@yahoo.com</td>
+                        <td><span class="scale-badge scale-small">Small</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Sunyani Sports Complex Gym</td>
+                        <td class="location">Sunyani</td>
+                        <td class="contact">+233 555 345 678 | sunyanisports@gmail.com</td>
+                        <td><span class="scale-badge scale-small">Small</span></td>
+                    </tr>
+                    <tr>
+                        <td class="gym-name">Cape Coast Fitness Center</td>
+                        <td class="location">Kotokuraba, Cape Coast</td>
+                        <td class="contact">+233 555 123 456 | ccfitness@outlook.com</td>
+                        <td><span class="scale-badge scale-small">Small</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
