@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - StrategyLab</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-headline">Our Premium Services</h1>
+                <p class="hero-subhead">End-to-end solutions for modern businesses</p>
+            </div>
+        </section>
+
+        <input type="text" class="search-box" placeholder="Search services..." onkeyup="filterServices()">
+
+        <div class="filter-tabs">
+            <span onclick="filterByTag('all')" class="active">All</span>
+            <span onclick="filterByTag('branding')">Branding</span>
+            <span onclick="filterByTag('design')">Design</span>
+            <span onclick="filterByTag('web')">Web</span>
+            <span onclick="filterByTag('mobile')">Mobile</span>
+            <span onclick="filterByTag('ai')">AI</span>
+            <span onclick="filterByTag('ecommerce')">E-Commerce</span>
+        </div>
+
+        <div class="service-card" data-tags="branding" id="branding">
+            <span class="badge">⚜️ Service Corporate Elite</span>
+            <h3>Branding & Premium Identity</h3>
+            <p>Complete creation of brand platforms and premium visual universes for companies seeking sector leadership.</p>
+            <p><strong>Includes:</strong> Positioning workshop, main logo, typography charter, color palette, complete Brandbook (40+ pages), stationery designs, social media templates.</p>
+            <p><strong>Duration:</strong> 4-6 weeks</p>
+            <p><strong>Added Value:</strong> Public perception aligned with strategic goals for investor fundraising.</p>
+        </div>
+
+        <div class="service-card" data-tags="design" id="design">
+            <span class="badge">📐 Experience Engineering</span>
+            <h3>UI/UX Design</h3>
+            <p>Interface design for web and mobile applications, focused on user flows and conversion optimization.</p>
+            <p><strong>Includes:</strong> User research, personas, user flows, Lo-Fi wireframes, complete Design System, animated prototypes.</p>
+            <p><strong>Duration:</strong> 3-5 weeks</p>
+            <p><strong>Added Value:</strong> 50% development cost reduction through interface validation.</p>
+        </div>
+
+        <div class="service-card" data-tags="web saas" id="web">
+            <span class="badge">💻 Core Engineering</span>
+            <h3>Web Development & SaaS</h3>
+            <p>Modern software architecture engineering and coding: secure, scalable, and performant.</p>
+            <p><strong>Includes:</strong> Database modeling, secure APIs (Node.js/Go), interfaces (Next.js/React), local/international payments (Bizao, Wave, Stripe).</p>
+            <p><strong>Duration:</strong> 6-12 weeks</p>
+            <p><strong>Added Value:</strong> Technical debt-free product, SEO-optimized, bank-level security.</p>
+        </div>
+
+        <div class="service-card" data-tags="mobile" id="mobile">
+            <span class="badge">📱 Mobile Excellence</span>
+            <h3>Mobile Applications</h3>
+            <p>Cross-platform native and hybrid applications with optimal performance.</p>
+            <p><strong>Includes:</strong> Flutter development, API integration, multi-device testing, store deployment.</p>
+            <p><strong>Duration:</strong> 8-16 weeks</p>
+            <p><strong>Added Value:</strong> Scalable applications supporting high concurrent user volumes.</p>
+        </div>
+
+        <div class="service-card" data-tags="ai" id="ai">
+            <span class="badge">🤖 Intelligence Automation</span>
+            <h3>AI Workflows & Automation</h3>
+            <p>AI-powered automation solutions to optimize client business processes.</p>
+            <p><strong>Includes:</strong> Chatbots, email automation, data analysis, AI API integration (OpenAI, Claude).</p>
+            <p><strong>Duration:</strong> 4-8 weeks</p>
+            <p><strong>Added Value:</strong> 70% reduction in manual time on repetitive processes.</p>
+        </div>
+
+        <div class="service-card" data-tags="branding web ecommerce" id="ecommerce">
+            <span class="badge">🛒 E-Commerce Solution</span>
+            <h3>Complete E-Commerce Platforms</h3>
+            <p>High-performance online stores with local and international payment integration.</p>
+            <p><strong>Includes:</strong> Product catalog, cart, Wave/Bizao/Stripe payments, inventory management, analytics.</p>
+            <p><strong>Duration:</strong> 4-8 weeks</p>
+            <p><strong>Added Value:</strong> Optimized conversion, high traffic support, local compliance.</p>
+        </div>
+
+        <section class="process-cta">
+            <h3>How We Work</h3>
+            <ol class="styled-list">
+                <li>Discovery - Understanding your business goals</li>
+                <li>Strategy - Crafting the roadmap</li>
+                <li>Design - Creating user-centered interfaces</li>
+                <li>Development - Building scalable solutions</li>
+                <li>Delivery - Quality assurance and launch</li>
+            </ol>
+        </section>
+    </main>
+
+    <script>
+        function filterServices() {
+            const search = document.querySelector('.search-box').value.toLowerCase();
+            document.querySelectorAll('.service-card').forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(search) ? 'block' : 'none';
+            });
+        }
+
+        function filterByTag(tag) {
+            document.querySelectorAll('.filter-tabs span').forEach(tab => {
+                tab.classList.toggle('active', tab.textContent.toLowerCase().includes(tag === 'all' ? 'all' : tag));
+            });
+            document.querySelectorAll('.service-card').forEach(card => {
+                if (tag === 'all' || card.dataset.tags.includes(tag)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

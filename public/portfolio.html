@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - StrategyLab Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="logo-box">S</div>
+            <h1>Strategy<span>Lab</span></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-headline">Our Work</h1>
+                <p class="hero-subhead">Case studies that demonstrate measurable impact</p>
+            </div>
+        </section>
+
+        <div class="filter-tabs">
+            <span onclick="filterByTag('all')" class="active">All</span>
+            <span onclick="filterByTag('branding')">Branding</span>
+            <span onclick="filterByTag('web')">Web</span>
+            <span onclick="filterByTag('mobile')">Mobile</span>
+            <span onclick="filterByTag('saas')">SaaS</span>
+            <span onclick="filterByTag('ecommerce')">E-Commerce</span>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-tags="branding">
+                <div class="portfolio-image">Luxury Brand</div>
+                <div class="portfolio-meta">
+                    <span class="badge">Branding</span>
+                    <h4>Premium Brand Identity</h4>
+                    <p class="portfolio-challenge"><strong>Challenge:</strong> Rebrand luxury client for international expansion</p>
+                    <p class="portfolio-solution"><strong>Solution:</strong> Complete brand platform with multilingual design system</p>
+                    <p class="portfolio-result"><strong>Result:</strong> 300% increase in investor inquiries</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-tags="web saas">
+                <div class="portfolio-image">SaaS Dashboard</div>
+                <div class="portfolio-meta">
+                    <span class="badge">SaaS</span>
+                    <h4>Enterprise Dashboard</h4>
+                    <p class="portfolio-challenge"><strong>Challenge:</strong> Complex data visualization for enterprise clients</p>
+                    <p class="portfolio-solution"><strong>Solution:</strong> React-based dashboard with real-time analytics</p>
+                    <p class="portfolio-result"><strong>Result:</strong> 50K+ active users, 40% faster load times</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-tags="mobile">
+                <div class="portfolio-image">Mobile Commerce</div>
+                <div class="portfolio-meta">
+                    <span class="badge">Mobile</span>
+                    <h4>E-Commerce Mobile App</h4>
+                    <p class="portfolio-challenge"><strong>Challenge:</strong> Seamless shopping experience across platforms</p>
+                    <p class="portfolio-solution"><strong>Solution:</strong> Flutter app with integrated payment gateways</p>
+                    <p class="portfolio-result"><strong>Result:</strong> 4.8/5 store rating, 10K+ downloads</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-tags="ecommerce">
+                <div class="portfolio-image">Online Store</div>
+                <div class="portfolio-meta">
+                    <span class="badge">E-Commerce</span>
+                    <h4>Boutique E-Commerce</h4>
+                    <p class="portfolio-challenge"><strong>Challenge:</strong> High-converting online store for African market</p>
+                    <p class="portfolio-solution"><strong>Solution:</strong> Custom platform with Bizao and Wave integration</p>
+                    <p class="portfolio-result"><strong>Result:</strong> 200% conversion improvement</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-tags="ai">
+                <div class="portfolio-image">AI Assistant</div>
+                <div class="portfolio-meta">
+                    <span class="badge">AI</span>
+                    <h4>Customer Support Automation</h4>
+                    <p class="portfolio-challenge"><strong>Challenge:</strong> 24/7 customer support with reduced costs</p>
+                    <p class="portfolio-solution"><strong>Solution:</strong> OpenAI-powered chatbot with email automation</p>
+                    <p class="portfolio-result"><strong>Result:</strong> 70% reduction in support ticket volume</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-tags="branding web">
+                <div class="portfolio-image">Corporate Site</div>
+                <div class="portfolio-meta">
+                    <span class="badge">Web</span>
+                    <h4>Corporate Website</h4>
+                    <p class="portfolio-challenge"><strong>Challenge:</strong> Modern presence for fintech startup</p>
+                    <p class="portfolio-solution"><strong>Solution:</strong> Next.js site with SEO optimization</p>
+                    <p class="portfolio-result"><strong>Result:</strong> Top 3 search ranking for key terms</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="industries">
+            <h2>Industries We Serve</h2>
+            <div class="card-grid">
+                <div class="industry-card">Fintech</div>
+                <div class="industry-card">E-Commerce</div>
+                <div class="industry-card">SaaS</div>
+                <div class="industry-card">Healthcare</div>
+                <div class="industry-card">Education</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function filterByTag(tag) {
+            document.querySelectorAll('.filter-tabs span').forEach(tab => {
+                tab.classList.toggle('active', tab.textContent.toLowerCase().includes(tag === 'all' ? 'all' : tag));
+            });
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                if (tag === 'all' || item.dataset.tags.includes(tag)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
